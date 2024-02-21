@@ -57,7 +57,7 @@ function Section({ children, title }: SectionProps): React.JSX.Element {
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const [isConnected, setIsConnected] = useState();
+  const [isConnected, setIsConnected] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
